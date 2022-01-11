@@ -11,5 +11,5 @@ import javax.persistence.Id;
 @Setter @Getter
 public class Comment {
 
-    
+
 }

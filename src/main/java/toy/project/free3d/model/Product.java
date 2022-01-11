@@ -30,6 +30,7 @@ public class Product {
 
     private String name;
 
+    @Lob //CLOB, BOLOB 타입을 매핑할 수 있다. 길이제한 업음.
     private String description;
 
 }
