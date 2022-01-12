@@ -4,16 +4,14 @@ import lombok.Getter;
 import lombok.Setter;
 import toy.project.free3d.type.CategoryType;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 
 @Entity
 @Getter @Setter
-public class Categories {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class ProductDetail {
 
     @Enumerated(EnumType.STRING)
-    private CategoryType type;
+    private CategoryType categoryType;
 }

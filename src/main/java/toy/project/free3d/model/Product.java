@@ -3,6 +3,7 @@ package toy.project.free3d.model;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
+import toy.project.free3d.type.CategoryType;
 import toy.project.free3d.type.FileFormat;
 
 import javax.persistence.*;
@@ -17,8 +18,6 @@ public class Product {
     private Long id;
 
     private User user;
-
-    private Categories categories;
 
     private int price;
 
