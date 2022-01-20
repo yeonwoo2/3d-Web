@@ -2,10 +2,9 @@ package toy.project.free3d.model;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
+import java.util.Date;
 
 @Entity
 @Getter @Setter
@@ -24,9 +23,9 @@ public class User {
     @Column(nullable = false)
     private String email;
 
-    @CreationTimestamp //시간 자동 입력
-    private Timestamp createDate;
-
     private String phone;
     
+    @Temporal(TemporalType.TIMESTAMP) //시간 자동 입력
+    private Date createDate;
+
 }
