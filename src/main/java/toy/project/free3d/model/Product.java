@@ -32,4 +32,8 @@ public class Product {
     @JoinColumn
     private User user;
 
+    @ManyToOne
+    @JoinColumn
+    private Category category;
+
 }

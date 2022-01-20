@@ -24,8 +24,12 @@ public class User {
     private String email;
 
     private String phone;
-    
+
     @Temporal(TemporalType.TIMESTAMP) //시간 자동 입력
     private Date createDate;
+
+    @OneToOne
+    @JoinColumn
+    private Cart cart;
 
 }
