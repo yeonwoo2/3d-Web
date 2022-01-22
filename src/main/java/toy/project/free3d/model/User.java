@@ -28,7 +28,7 @@ public class User {
     @Temporal(TemporalType.TIMESTAMP) //시간 자동 입력
     private Date createDate;
 
-    @OneToOne
+    @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn
     private Cart cart;
 

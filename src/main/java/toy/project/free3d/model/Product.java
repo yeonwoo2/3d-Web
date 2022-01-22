@@ -28,11 +28,11 @@ public class Product {
     @Enumerated(EnumType.STRING)
     private FileFormat format;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn
     private User user;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn
     private Category category;
 
